@@ -1,0 +1,13 @@
+// @use '../../styles/_variables.scss';
+@use 'src/styles/_variables.scss' as *;
+
+.button{
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    background: map-get($colors , green );
+    color:white;
+    border:none;
+    padding: 10px 20px;
+    border-radius: 50px;
+}

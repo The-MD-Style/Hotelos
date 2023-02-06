@@ -1,0 +1,42 @@
+.container{
+    margin-top: 100px;
+    .wrapper{
+    gap:60px;
+    display: flex;  
+    flex-direction: column;
+    font-family: sans-serif !important;
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .headerText{
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 60px;
+        }
+        .button-text{
+            display: flex;
+            justify-content: space-between;
+            .text{
+                max-width:409px ;
+                width: 100%;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #555555;
+            }
+            .button{
+                background: rgba(36, 171, 112, 0.1) !important;
+                color: #24AB70;
+                height: 40px !important;
+                cursor: pointer;
+            }
+        }
+    }
+    .carts{
+        display: flex;
+        gap: 20px; 
+    }
+    }
+}

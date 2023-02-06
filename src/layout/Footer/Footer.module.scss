@@ -1,0 +1,39 @@
+.container{
+  height: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  .wrapper{
+    font-family: sans-serif;
+    padding: 0 109px;
+    display: flex;
+    justify-content: space-between;
+    .leftSide{
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 264px;
+      font-family: sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #555555;
+    }
+    .footerCategory{
+      .CategoryHead{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+      }
+      .list{
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+        list-style: none;
+        padding: 0;
+        .item{
+
+        }
+      }
+    }
+  }
+}
