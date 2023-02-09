@@ -1,4 +1,5 @@
 import Footer from "@/layout/Footer/Footer";
+import Hamburger from "@/layout/Hamburger/Hamburger";
 import NavBar from "@/layout/NavBar/NavBar";
 import "@/styles/globals.scss";
 
@@ -16,6 +17,7 @@ export default function RootLayout({
       <head />
       <body>
         <NavBar></NavBar>
+        <Hamburger></Hamburger>
         {children}
         <Footer></Footer>
       </body>

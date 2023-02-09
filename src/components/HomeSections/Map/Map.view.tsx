@@ -24,7 +24,7 @@ const MapView = (props: Props) => {
             <p
               className={classes["text"]}
             >{`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's `}</p>
-            <Button type={"button"}>Contact</Button>
+            <Button type={"button"} className={classes['button']}>Contact</Button>
           </div>
         </div>
       </div>

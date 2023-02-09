@@ -19,7 +19,7 @@
             display: flex;
             justify-content: space-between;
             .text{
-                max-width:409px ;
+                max-width:409px;
                 width: 100%;
                 font-weight: 400;
                 font-size: 16px;
@@ -27,16 +27,27 @@
                 color: #555555;
             }
             .button{
+                justify-self: flex-end;
                 background: rgba(36, 171, 112, 0.1) !important;
                 color: #24AB70;
-                height: 40px !important;
+                max-height: 40px !important;
+                min-width: 100px !important;
+                transition: 0.3s all ease-in-out;
                 cursor: pointer;
+            }
+            .button:hover{
+                color: white;
+                background: #24AB70 !important;
             }
         }
     }
     .carts{
         display: flex;
         gap: 20px; 
+        justify-content: center;
+        @media screen and (max-width:1000px) {
+            flex-wrap: wrap;
+        }
     }
     }
 }

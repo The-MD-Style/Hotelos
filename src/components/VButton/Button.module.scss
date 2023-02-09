@@ -2,7 +2,10 @@
 @use 'src/styles/_variables.scss' as *;
 
 .button{
+    width: auto;
     font-family: sans-serif;
+    word-wrap: none;
+    cursor: pointer;
     font-size: 14px;
     line-height: 20px;
     background: map-get($colors , green );

@@ -18,7 +18,7 @@ const NavBarView = (props: Props) => {
         <Button type={"button"} className={classes["button"]}>
           Login
         </Button>
-      </nav>
+      </nav>      
     </SectionContainer>
   );
 };
