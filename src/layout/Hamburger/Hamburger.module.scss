@@ -1,0 +1,64 @@
+.container{
+    display: none;
+    @media screen and (max-width:1000px) {
+        right: -230px;
+        z-index: 11;
+        transition: 1s;
+        position: absolute;
+        display: flex;
+        position: fixed;
+        width: max-content;
+        height: max-content;
+    }
+
+    .iconBox{
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        z-index: 31515;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        border-radius: 50%;
+        border: 2px solid #24AB70;
+        margin: 15px 15px 0 auto;
+
+        .icon{
+            height: 30px;
+            fill:#24AB70;
+        }
+
+    }
+    .blur{
+        z-index: 1;
+        position: relative;
+        right: -2px;
+        backdrop-filter: blur(10px);
+        width: 100vh;
+        overflow: hidden;
+        height: 100vh;
+    }
+    
+    &--active{
+        z-index: 2;
+        width: 230px;
+        height: 100vh;
+        background-color: white;
+        color:#24AB70;
+        border-left: 2px solid #24AB70;
+        ul{
+            margin-top: 20px;
+            list-style: none;
+            li{
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+.active{
+    right: 0;
+}

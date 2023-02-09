@@ -18,4 +18,5 @@ export const cartData = [
         price: 200,
         photo: photo 
     },
+    
 ]

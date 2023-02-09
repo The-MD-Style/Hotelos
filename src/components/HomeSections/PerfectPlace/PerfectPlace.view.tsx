@@ -6,6 +6,8 @@ import classes from "./PerfectPlace.module.scss";
 import Button from "@/components/VButton/Button";
 import { Info } from "./PerfectPlace.map";
 import VIcon from "@/components/VIcon/VIcon";
+import Image from "next/image";
+import photo from "@/assets/images/homeImage2.jpg"
 
 type Props = {};
 
@@ -22,12 +24,15 @@ const PerfectPlaceView = (props: Props) => {
             industry.
           </p>
           <button>
-            <div className={classes["start"]}>▶</div>
+            <div className={classes["start"]}><VIcon name={"play"} className={classes['icon']}></VIcon></div>
             Watch video
           </button>
         </div>
-        <div className={classes["right"]}></div>
-        <div className={classes["overwrite"]}>
+        <div className={classes["right"]}>
+          <Image src={photo} alt={""} className={classes['image']}></Image>
+        </div>
+        <div className={classes['overwriteWrapper']}>
+          <div className={classes["overwrite"]}>
           <div className={classes["categories"]}>
             {Info.map((value, index) => (
               <>
@@ -44,7 +49,7 @@ const PerfectPlaceView = (props: Props) => {
                   </div>
                 </div>
                 {index !== Info.length - 1 ? (
-                  <div className={classes["separator"]}></div>
+                  <div key={value + 'separator'} className={classes["separator"]}></div>
                 ) : (
                   ""
                 )}
@@ -58,8 +63,10 @@ const PerfectPlaceView = (props: Props) => {
               height={19}
               color={"white"}
             ></VIcon>
-            Search...
+            {/* Search... */}
+            <input type="text" placeholder="Search..." className={classes['input']}></input>
           </Button>
+          </div>
         </div>
       </div>
     </SectionContainer>

@@ -38,4 +38,14 @@
             
         }
     }
+    transition: 0.5s;
+    &:hover{
+        transform:  scale(1.2);
+        z-index: 1;
+        margin: 0 30px;
+        @media screen and (max-width:750px) {
+            transform: scale(1.1);
+            margin: 0;
+        }
+    }
 }
