@@ -1,6 +1,5 @@
 .container{
     display: none;
-    max-height: 70px;
     @media screen and (max-width:1000px) {
         right: -230px;
         z-index: 11;

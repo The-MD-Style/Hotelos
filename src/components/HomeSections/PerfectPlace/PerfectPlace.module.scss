@@ -131,9 +131,6 @@
             &::-webkit-scrollbar { 
                 display: none;  /* Safari and Chrome */
             }
-            @media screen and (max-width:1000px) {
-                display: none;
-            }
             .button{
                 font-family: sans-serif;
                 font-weight: 400;
@@ -216,94 +213,6 @@
                     background: #E8E8E8;
                 }
             }
-        }
-        .overwriteMobile{
-            display: none;
-            @media screen and (max-width:1000px) {
-            height: 100px;
-            justify-content: space-between;
-            align-items: center;
-            display: flex;
-            background: white;
-            border-radius: 50px;
-            z-index: 1;
-            box-shadow: -1px 3px 5px -2px rgba(0,0,0,1);
-            -webkit-box-shadow: -1px 3px 5px -2px rgba(0,0,0,1);
-            -moz-box-shadow: -1px 3px 5px -2px rgba(0,0,0,1);
-            }
-            .navButton{
-                padding: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 111;
-                position: relative;
-                width: clamp(50px,50px,50px);
-                height: clamp(50px,50px,50px);
-                font-size: 20px;
-                border: 2px solid #24AB70;
-                border-radius: 50%;
-                background: #24AB70;
-                .icon{
-                    fill:white;
-                    width: 25px; 
-                    height: 25px;
-                    transition: 0.5s;
-                }
-            }
-            .next{
-                right:-10px;
-            }
-            .prev{
-                transform: rotate(180deg);
-                left:-10px;
-            }
-
-
-            .categories{
-                display: flex;
-                width: 70%;
-                -webkit-user-select: none; /* Safari */
-                -ms-user-select: none; /* IE 10 and IE 11 */
-                user-select: none; /* Standard syntax */
-                .categoriesElement{
-                    align-self: center;
-                    display: flex;
-                    justify-content: center;
-                    width: 100%;
-                    margin: 0 30px;
-                    height: 48px;
-                 .text{
-                    display: flex;
-                    flex-direction: column;
-
-                    .headText{
-                        font-family: sans-serif;
-                        font-weight: 500;
-                        font-size: 22px;
-                        line-height: 24px;
-                    }
-                    .subText{
-                        margin-top: 8px;
-                        font-family: sans-serif;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 17px;
-                        color: #555555;
-                        letter-spacing: -1px;
-                    }
-                 }
-                 .icon{
-                    margin-right: 10px;
-                    fill:#24AB70;
-                 }
-            }}
-            // .categories{
-            //     .categoriesElement{
-            //         display: flex;
-            //     }
-
-            // }
         }
     }
 

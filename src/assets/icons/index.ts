@@ -1,4 +1,4 @@
-import {  location,calendar,user,search, twitter, facebook, instagram, play, hamburger, next  } from './custom';
+import {  location,calendar,user,search, twitter, facebook, instagram, play, hamburger  } from './custom';
 
 const icons = {
   location,
@@ -9,8 +9,7 @@ const icons = {
   facebook,
   instagram,
   play,
-  hamburger,
-  next
+  hamburger
 };
 
 export type Icons = keyof typeof icons;
