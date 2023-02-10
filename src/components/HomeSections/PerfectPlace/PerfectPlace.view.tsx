@@ -8,10 +8,19 @@ import { Info } from "./PerfectPlace.map";
 import VIcon from "@/components/VIcon/VIcon";
 import Image from "next/image";
 import photo from "@/assets/images/homeImage2.jpg"
+import useSwipe from "@/hooks/useSwipe/useSwipe";
 
-type Props = {};
+type Props = {
+  value:number;
+  next:() => void;
+  prev:() => void;
+};
 
 const PerfectPlaceView = (props: Props) => {
+
+  const element = Info[props.value];
+  const swipeHandler = useSwipe({ onSwipedLeft: props.next, onSwipedRight: props.prev });
+
   return (
     <SectionContainer className={classes["container"]}>
       <div className={classes["wrapper"]}>
@@ -66,6 +75,24 @@ const PerfectPlaceView = (props: Props) => {
             {/* Search... */}
             <input type="text" placeholder="Search..." className={classes['input']}></input>
           </Button>
+          </div>
+          <div {...swipeHandler} className={classes['overwriteMobile']}>
+            <button className={`${classes['navButton']} ${classes['prev']}`} onClick={props.prev}><VIcon name={"arrow"} height={25} className={classes['icon']}></VIcon></button>
+              <div className={classes['categories']}>
+              <div className={classes["categoriesElement"]}>
+                  <VIcon
+                    name={element.icon}
+                    width={24}
+                    height={30}
+                    className={classes["icon"]}
+                  ></VIcon>
+                  <div className={classes["text"]}>
+                    <p className={classes["headText"]}>{element.name}</p>
+                    <p className={classes["subText"]}>{element.subText}</p>
+                  </div>
+                </div>
+              </div>
+            <button className={`${classes['navButton']} ${classes['next']}`} onClick={props.next}><VIcon name={"arrow"} height={25} className={classes['icon']}></VIcon></button>
           </div>
         </div>
       </div>
