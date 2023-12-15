@@ -14,14 +14,12 @@ import { useEffect, useState } from "react";
 export default function Home() {
 
   const [data, setData] = useState<string[]>([]);
-  const [data2, setData2] = useState<string[]>(['']);
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('https://api.npoint.io/a41135bbc5d774b98a47');
+      const response = await fetch('https://api.npoint.io/1958a580a3b24b8f779a');
       const newData = await response.json();
-      setData(newData.what);
-      setData2(newData.why);
+      setData(newData.hui);
       
     };
     
@@ -38,10 +36,8 @@ export default function Home() {
       <History></History>
       <Map></Map>
       <div>
-        {data}
-        <br />
         <ul>
-          {data2.map((item)=> <li key={item+"hui"}>{item}</li> )}
+          {data.map((item)=> <li key={item+"hui"}>{item}</li> )}
         </ul>
       </div>
     </SectionContainer>
