@@ -1,5 +1,4 @@
-import { Inter } from "@next/font/google";
-import classes from "./page.module.scss";
+"use client"
 import SectionContainer from "@/containers/SectionContainer/SectionContainer";
 import PerfectPlace from "@/components/HomeSections/PerfectPlace/PerfectPlace";
 import MostPopular from "@/components/HomeSections/MostPopular/MostPopular";
