@@ -41,7 +41,7 @@ export default function Home() {
         {data}
         <br />
         <ul>
-          {data2.map((item)=> <li>{item}</li> )}
+          {data2.map((item)=> <li key={item+"hui"}>{item}</li> )}
         </ul>
       </div>
     </SectionContainer>
